@@ -23,9 +23,7 @@ function App() {
           <h2 className="text-xl font-semibold text-slate-800">工作经历</h2>
           <div className="space-y-1">
             <div className="flex flex-wrap items-baseline justify-between text-sm text-slate-600">
-              <span className="font-medium text-slate-800">
-                公司名称 | 职位
-              </span>
+              <span className="font-medium text-slate-800">公司名称 | 职位</span>
               <span>2021.01 - 至今</span>
             </div>
             <ul className="list-disc space-y-1 pl-5 text-sm text-slate-700">
@@ -47,12 +45,8 @@ function App() {
           <h2 className="text-xl font-semibold text-slate-800">技能</h2>
           <div className="flex flex-wrap gap-2 text-sm text-slate-700">
             <span className="rounded-full bg-slate-200 px-3 py-1">React</span>
-            <span className="rounded-full bg-slate-200 px-3 py-1">
-              TypeScript
-            </span>
-            <span className="rounded-full bg-slate-200 px-3 py-1">
-              Tailwind CSS
-            </span>
+            <span className="rounded-full bg-slate-200 px-3 py-1">TypeScript</span>
+            <span className="rounded-full bg-slate-200 px-3 py-1">Tailwind CSS</span>
           </div>
         </section>
       </main>
