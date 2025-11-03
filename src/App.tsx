@@ -3,7 +3,7 @@ function App() {
     <div className="min-h-screen bg-slate-100 text-slate-900">
       <main className="mx-auto max-w-3xl space-y-8 px-6 py-12">
         <header className="space-y-2">
-          <h1 className="text-4xl font-bold">你的名字</h1>
+          <h1 className="text-4xl font-bold">Peter</h1>
           <p className="text-lg text-slate-600">前端开发工程师</p>
           <div className="flex flex-wrap gap-4 text-sm text-slate-600">
             <span>📧 you@example.com</span>
