@@ -417,19 +417,14 @@ export const testimonial: TestimonialSection = {
  * Contact section
  */
 export const contact: ContactSection = {
-  headerText: "Let's connect.",
+  headerText: "Get in touch",
   description:
-    "Based in Sydney and open to full-time roles or collaboration opportunities. Drop me a line and I’ll respond quickly.",
+    "Available for full-time roles or collaborations anywhere across Australia. Drop me a line and I'll respond quickly.",
   items: [
     {
       type: ContactType.Email,
       text: "peter.pan.yesman.7@gmail.com",
       href: "mailto:peter.pan.yesman.7@gmail.com",
-    },
-    {
-      type: ContactType.Phone,
-      text: "0426 656 284",
-      href: "tel:0426656284",
     },
     {
       type: ContactType.Location,
