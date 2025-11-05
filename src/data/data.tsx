@@ -1,18 +1,13 @@
 import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
-  FlagIcon,
+  DevicePhoneMobileIcon,
+  EnvelopeIcon,
   MapIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
 
-import GithubIcon from "../components/Icon/GithubIcon";
-import InstagramIcon from "../components/Icon/InstagramIcon";
 import LinkedInIcon from "../components/Icon/LinkedInIcon";
-import StackOverflowIcon from "../components/Icon/StackOverflowIcon";
-import TwitterIcon from "../components/Icon/TwitterIcon";
 import heroImage from "../images/header-background.webp";
 import porfolioImage1 from "../images/portfolio/portfolio-1.jpg";
 import porfolioImage2 from "../images/portfolio/portfolio-2.jpg";
@@ -36,8 +31,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: "React Resume Template",
-  description: "Example site built with Tim Baker's react resume template",
+  title: "Peter Pan | Full-Stack Developer",
+  description:
+    "Portfolio and resume for Peter Pan, a full-stack developer skilled in modern web technologies, cloud platforms, and collaborative delivery.",
 };
 
 /**
@@ -61,35 +57,28 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Peter Pan`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based{" "}
-        <strong className="text-stone-100">Full Stack Software Engineer</strong>
-        , currently working at{" "}
-        <strong className="text-stone-100">Instant Domains</strong> helping
-        build a modern, mobile-first, domain registrar and site builder.
+        Enthusiastic{" "}
+        <strong className="text-stone-100">Full-Stack Developer</strong> with 2
+        years of coding experience and hands-on practice delivering modern web
+        applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in{" "}
-        <strong className="text-stone-100">Muay Thai</strong>, plucking my{" "}
-        <strong className="text-stone-100">banjo</strong>, or exploring
-        beautiful <strong className="text-stone-100">Vancouver Island</strong>.
+        Highly skilled both frontend and backend technologies, proven experience
+        CI/CD workflows, containerization and relational/NoSQL databases. A fast
+        learner who thrives in collaborative teams and continuously seeks to
+        translate real-world needs into high-quality software solutions.
       </p>
     </>
   ),
   actions: [
     {
-      href: "/assets/resume.pdf",
-      text: "Resume",
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
       href: `#${SectionId.Contact}`,
       text: "Contact",
-      primary: false,
+      primary: true,
     },
   ],
 };
@@ -99,22 +88,28 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hi, I'm Peter—an energetic full-stack developer who loves shipping features end-to-end. I pair strong frontend experience with React and Tailwind CSS with solid backend foundations in ASP.NET Core and Spring Boot, and I enjoy designing resilient data flows that keep teams moving quickly.`,
   aboutItems: [
-    { label: "Location", text: "Victoria, BC", Icon: MapIcon },
-    { label: "Age", text: "29", Icon: CalendarIcon },
-    { label: "Nationality", text: "Canadian / Irish", Icon: FlagIcon },
+    { label: "Location", text: "Sydney, Australia", Icon: MapIcon },
+    { label: "Phone", text: "0426 656 284", Icon: DevicePhoneMobileIcon },
     {
-      label: "Interests",
-      text: "Motorcycles, Muay Thai, Banjos",
+      label: "Email",
+      text: "peter.pan.yesman.7@gmail.com",
+      Icon: EnvelopeIcon,
+    },
+    {
+      label: "Experience",
+      text: "2 years full-stack development",
+      Icon: CalendarIcon,
+    },
+    {
+      label: "Current Focus",
+      text: "Cloud-native delivery & CI/CD automation",
       Icon: SparklesIcon,
     },
-    { label: "Study", text: "University of Victoria", Icon: AcademicCapIcon },
     {
       label: "Employment",
-      text: "Instant Domains, inc.",
+      text: "Open to full-time opportunities",
       Icon: BuildingOffice2Icon,
     },
   ],
@@ -125,70 +120,112 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: "Spoken languages",
+    name: "Languages",
     skills: [
       {
-        name: "English",
-        level: 10,
+        name: "C#",
+        level: 9,
       },
       {
-        name: "French",
-        level: 4,
+        name: "JavaScript / TypeScript",
+        level: 9,
       },
       {
-        name: "Spanish",
-        level: 3,
+        name: "Python",
+        level: 6,
       },
     ],
   },
   {
-    name: "Frontend development",
+    name: "Frontend",
     skills: [
       {
         name: "React",
         level: 9,
       },
       {
-        name: "Typescript",
+        name: "Redux Toolkit",
         level: 7,
       },
       {
-        name: "GraphQL",
+        name: "React Query",
+        level: 6,
+      },
+      {
+        name: "Tailwind CSS",
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: "Backend",
+    skills: [
+      {
+        name: "ASP.NET Core",
+        level: 8,
+      },
+      {
+        name: "RESTful API Design",
+        level: 8,
+      },
+      {
+        name: "Spring Boot",
         level: 6,
       },
     ],
   },
   {
-    name: "Backend development",
+    name: "Databases",
     skills: [
       {
-        name: "Node.js",
+        name: "SQL Server",
         level: 8,
       },
       {
-        name: "Rust",
-        level: 5,
+        name: "MySQL / PostgreSQL",
+        level: 7,
       },
       {
-        name: "Golang",
-        level: 4,
+        name: "MongoDB",
+        level: 6,
       },
     ],
   },
   {
-    name: "Mobile development",
+    name: "DevOps & Cloud",
     skills: [
       {
-        name: "React Native",
-        level: 9,
+        name: "Docker",
+        level: 8,
       },
       {
-        name: "Flutter",
-        level: 4,
+        name: "Git & GitHub Actions",
+        level: 8,
       },
       {
-        name: "Swift",
-        level: 3,
+        name: "Azure / AWS / Vercel",
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: "Workflow & Tooling",
+    skills: [
+      {
+        name: "Agile / Scrum",
+        level: 8,
+      },
+      {
+        name: "Jira & Confluence",
+        level: 7,
+      },
+      {
+        name: "Figma & Miro",
+        level: 6,
+      },
+      {
+        name: "Postman",
+        level: 8,
       },
     ],
   },
@@ -196,51 +233,55 @@ export const skills: SkillGroup[] = [
 
 /**
  * Portfolio section
+ * (Placeholder imagery retained; replace with project visuals as desired.)
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: "Project title 1",
-    description: "Give a short description of your project here.",
-    url: "https://reactresume.com",
+    title: "Electronic Invoicing System",
+    description:
+      "Cloud-hosted invoicing platform with secure login, invoice lifecycle management, and PDF automation.",
+    url: "https://example.com/electronic-invoicing-system",
     image: porfolioImage1,
   },
   {
-    title: "Project title 2",
-    description: "Give a short description of your project here.",
-    url: "https://reactresume.com",
+    title: "DistinctionCoding Service Platform",
+    description:
+      "React-based portal enabling NDIS clients to apply for and manage support services.",
+    url: "https://example.com/distinctioncoding",
     image: porfolioImage2,
   },
   {
-    title: "Project title 3",
-    description: "Give a short description of your project here.",
-    url: "https://reactresume.com",
+    title: "Robotic Vacuum Firmware Enhancements",
+    description:
+      "Embedded firmware work for TP-Link robotic vacuum cleaners with adaptive cleaning logic.",
+    url: "https://example.com/tplink-vacuum",
     image: porfolioImage3,
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
-    date: "April 2007",
-    location: "Clown college",
-    title: "Masters in Beer tasting",
+    date: "Sep 2023 - Sep 2025",
+    location: "Sydney, Australia",
+    title: "Master of Information Technology",
     content: (
       <p>
-        Describe your experience at school, what you learned, what useful skills
-        you have acquired etc.
+        University of New South Wales (UNSW). Weighted Average Mark (WAM):
+        83/100.
       </p>
     ),
   },
   {
-    date: "March 2003",
-    location: "School of Business",
-    title: "What did you study 101",
+    date: "Sep 2018 - Jul 2022",
+    location: "Xi’an, China",
+    title: "Bachelor of Software Engineering",
     content: (
       <p>
-        Describe your experience at school, what you learned, what useful skills
-        you have acquired etc.
+        Xidian University. GPA: 3.4/4.0 with strong foundations in software
+        engineering principles and backend systems.
       </p>
     ),
   },
@@ -248,27 +289,99 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: "March 2010 - Present",
-    location: "Awesome Development Company",
-    title: "Senior UX Engineer",
+    date: "Mar 2025 - Jun 2025",
+    location: "Sydney, Australia",
+    title: "Full-Stack Developer · Electronic Invoicing System",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies
-        you have been working with, and anything else that would be useful for
-        an employer to know.
-      </p>
+      <ul className="list-disc space-y-2 pl-4">
+        <li>
+          Built layered ASP.NET Core REST APIs secured with JWT and Identity,
+          backed by Entity Framework and SQL Server.
+        </li>
+        <li>
+          Delivered a responsive React front end using TypeScript, React Hook
+          Form, React Query, and Tailwind CSS with GitHub Actions CI/CD.
+        </li>
+        <li>
+          Containerised services with Docker, deployed to AWS, generated Swagger
+          docs, and implemented xUnit/Moq/FluentAssertions tests.
+        </li>
+        <li>
+          Integrated Reckon APIs via OAuth 2.0 and Gemini 2.0 for PDF parsing,
+          while facilitating agile ceremonies as Scrum Master.
+        </li>
+      </ul>
     ),
   },
   {
-    date: "March 2007 - February 2010",
-    location: "Garage Startup Studio",
-    title: "Junior bug fixer",
+    date: "Feb 2025 - May 2025",
+    location: "Sydney, Australia",
+    title: "Full-Stack Developer · DistinctionCoding (Intern)",
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies
-        you have been working with, and anything else that would be useful for
-        an employer to know.
-      </p>
+      <ul className="list-disc space-y-2 pl-4">
+        <li>
+          Implemented C# ASP.NET Core APIs with JWT-based role management across
+          Admin, Client, and Provider portals.
+        </li>
+        <li>
+          Designed resilient SQL Server and MongoDB data models to meet NDIS
+          service requirements.
+        </li>
+        <li>
+          Developed a TypeScript React SPA powered by Redux Toolkit, React
+          Query, and Tailwind CSS with WCAG 2.1 AA accessibility.
+        </li>
+        <li>
+          Participated in agile sprints, code reviews, and performance tuning
+          initiatives to improve platform responsiveness.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: "Jul 2022 - Dec 2022",
+    location: "Hangzhou, China",
+    title: "Software Engineer · TP-Link",
+    content: (
+      <ul className="list-disc space-y-2 pl-4">
+        <li>
+          Developed embedded C firmware for robotic vacuum cleaners using Keil5
+          and Linux environments.
+        </li>
+        <li>
+          Integrated carpet sensor logic to detect floor types and trigger
+          adaptive cleaning behaviour.
+        </li>
+        <li>
+          Collaborated with hardware and QA teams to resolve voice playback and
+          messaging defects, improving system stability.
+        </li>
+        <li>
+          Maintained Jenkins-based build and release workflows and managed
+          issues through Bugzilla.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: "Jun 2021 - Sep 2021",
+    location: "Xi’an, China",
+    title: "Backend Developer · On-campus Internship, Xidian University",
+    content: (
+      <ul className="list-disc space-y-2 pl-4">
+        <li>
+          Delivered Spring Boot microservices with MyBatis and MySQL for party
+          membership fee tracking and communications.
+        </li>
+        <li>
+          Implemented authentication and role-based access control for multiple
+          member tiers.
+        </li>
+        <li>
+          Authored unit tests and co-ordinated API contracts with frontend
+          engineers to streamline integration.
+        </li>
+      </ul>
     ),
   },
 ];
@@ -303,31 +416,30 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
-  headerText: "Get in touch.",
+  headerText: "Let's connect.",
   description:
-    "Here is a good spot for a message to your readers to let them know how best to reach out to you.",
+    "Based in Sydney and open to full-time roles or collaboration opportunities. Drop me a line and I’ll respond quickly.",
   items: [
     {
       type: ContactType.Email,
-      text: "reachout@timbaker.me",
-      href: "mailto:reachout@timbaker.me",
+      text: "peter.pan.yesman.7@gmail.com",
+      href: "mailto:peter.pan.yesman.7@gmail.com",
+    },
+    {
+      type: ContactType.Phone,
+      text: "0426 656 284",
+      href: "tel:0426656284",
     },
     {
       type: ContactType.Location,
-      text: "Victoria BC, Canada",
-      href: "https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z",
+      text: "Sydney, Australia",
+      href: "https://www.google.com/maps/place/Sydney+NSW",
     },
     {
-      type: ContactType.Instagram,
-      text: "@tbakerx",
-      href: "https://www.instagram.com/tbakerx/",
-    },
-    {
-      type: ContactType.Github,
-      text: "tbakerx",
-      href: "https://github.com/tbakerx",
+      type: ContactType.LinkedIn,
+      text: "linkedin.com/in/peter-pan-yesman",
+      href: "https://www.linkedin.com/in/peter-pan-yesman",
     },
   ],
 };
@@ -336,25 +448,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: "Github", Icon: GithubIcon, href: "https://github.com/tbakerx" },
-  {
-    label: "Stack Overflow",
-    Icon: StackOverflowIcon,
-    href: "https://stackoverflow.com/users/8553186/tim-baker",
-  },
   {
     label: "LinkedIn",
     Icon: LinkedInIcon,
-    href: "https://www.linkedin.com/in/timbakerx/",
-  },
-  {
-    label: "Instagram",
-    Icon: InstagramIcon,
-    href: "https://www.instagram.com/reactresume/",
-  },
-  {
-    label: "Twitter",
-    Icon: TwitterIcon,
-    href: "https://twitter.com/TimBakerx",
+    href: "https://www.linkedin.com/in/peter-pan-yesman",
   },
 ];
