@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FC, memo } from "react";
 import { aboutData, heroData, SectionId } from "../../data/data";
 import Section from "../Layout/Section";
-import Socials from "../Socials";
 
 const Hero: FC = memo(() => {
   const { imageSrc, name, description, actions } = heroData;
@@ -27,9 +26,6 @@ const Hero: FC = memo(() => {
                 {name}
               </h1>
               {description}
-              <div className="flex gap-x-4 text-neutral-100">
-                <Socials />
-              </div>
               <div className="flex w-full flex-wrap justify-center gap-4 md:justify-start">
                 {actions.map(({ href, text, primary, Icon }) => (
                   <a

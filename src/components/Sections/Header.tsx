@@ -39,11 +39,7 @@ const DesktopNav: FC<{
     >
       <nav className="flex justify-end gap-x-8">
         {navSections.map((section) => (
-          <NavItem
-            className={navItemClass}
-            key={section}
-            section={section}
-          />
+          <NavItem className={navItemClass} key={section} section={section} />
         ))}
       </nav>
     </header>
