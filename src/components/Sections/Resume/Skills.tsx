@@ -35,9 +35,6 @@ export const Skill: FC<{ skill: SkillType }> = memo(({ skill }) => {
     <div className="flex flex-col">
       <div className="flex items-center justify-between text-sm font-medium uppercase tracking-wide text-neutral-500">
         <span>{name}</span>
-        <span className="rounded-full bg-neutral-900/5 px-2 py-0.5 text-xs text-neutral-700">
-          {level}/{max}
-        </span>
       </div>
       <div className="relative mt-2 h-3 w-full overflow-hidden rounded-full bg-neutral-200/80">
         <div
