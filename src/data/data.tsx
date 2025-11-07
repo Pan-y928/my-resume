@@ -43,7 +43,7 @@ export const SectionId = {
   Hero: "hero",
   About: "about",
   Contact: "contact",
-  Portfolio: "portfolio",
+  Projects: "projects",
   Skills: "skills",
   Work: "work",
   Education: "education",
@@ -225,7 +225,7 @@ export const skills: SkillGroup[] = [
 ];
 
 /**
- * Portfolio section
+ * Projects section
  * (Placeholder imagery retained; replace with project visuals as desired.)
  */
 export const portfolioItems: PortfolioItem[] = [
@@ -233,21 +233,21 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Electronic Invoicing System",
     description:
       "Cloud-hosted invoicing platform with secure login, invoice lifecycle management, and PDF automation.",
-    url: "https://example.com/electronic-invoicing-system",
+    url: "https://github.com/Pan-y928/invoiceFlow",
     image: porfolioImage1,
   },
   {
-    title: "DistinctionCoding Service Platform",
+    title: "NDIS Service Platform",
     description:
       "React-based portal enabling NDIS clients to apply for and manage support services.",
-    url: "https://example.com/distinctioncoding",
+    url: "",
     image: porfolioImage2,
   },
   {
     title: "Robotic Vacuum Firmware Enhancements",
     description:
       "Embedded firmware work for TP-Link robotic vacuum cleaners with adaptive cleaning logic.",
-    url: "https://example.com/tplink-vacuum",
+    url: "",
     image: porfolioImage3,
   },
 ];
