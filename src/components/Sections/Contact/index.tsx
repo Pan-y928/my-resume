@@ -29,7 +29,10 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
 const Contact: FC = memo(() => {
   const { headerText, description, items } = contact;
   return (
-    <Section className="bg-neutral-900" sectionId={SectionId.Contact}>
+    <Section
+      className="bg-gradient-to-b from-emerald-900 via-emerald-950 to-black"
+      sectionId={SectionId.Contact}
+    >
       <div className="flex flex-col items-center gap-y-3">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
           <EnvelopeIcon className="hidden h-16 w-16 text-white md:block" />

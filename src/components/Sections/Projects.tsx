@@ -15,7 +15,7 @@ import Section from "../Layout/Section";
 const Projects: FC = memo(() => {
   return (
     <Section
-      className="bg-neutral-900 text-white"
+      className="bg-gradient-to-b from-stone-950 via-neutral-700 to-black text-neutral-100"
       sectionId={SectionId.Projects}
     >
       <div className="flex flex-col gap-y-8">
