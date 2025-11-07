@@ -144,16 +144,12 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: "Redux Toolkit",
-        level: 7,
-      },
-      {
-        name: "React Query",
-        level: 6,
-      },
-      {
         name: "Tailwind CSS",
         level: 8,
+      },
+      {
+        name: "Redux Toolkit",
+        level: 7,
       },
     ],
   },
@@ -213,19 +209,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: "Agile / Scrum",
-        level: 8,
+        level: 9,
       },
       {
         name: "Jira & Confluence",
-        level: 7,
+        level: 8,
       },
       {
         name: "Figma & Miro",
         level: 6,
-      },
-      {
-        name: "Postman",
-        level: 8,
       },
     ],
   },

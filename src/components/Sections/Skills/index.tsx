@@ -1,0 +1,35 @@
+import { FC, memo } from "react";
+
+import { SectionId, skills } from "../../../data/data";
+import Section from "../../Layout/Section";
+import { SkillGroup } from "../Resume/Skills";
+
+const Skills: FC = memo(() => {
+  return (
+    <Section className="bg-white" sectionId={SectionId.Skills}>
+      <div className="flex flex-col gap-y-8">
+        <div className="text-center">
+          <p className="text-sm font-medium uppercase tracking-wide text-emerald-600">
+            Skill Snapshot
+          </p>
+          <h2 className="text-3xl font-bold text-neutral-900">Core strengths</h2>
+          <p className="mt-4 text-base text-neutral-600">
+            The technologies and practices I apply most often when building
+            resilient, user-friendly software.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {skills.map((skillgroup, index) => (
+            <SkillGroup
+              key={`${skillgroup.name}-${index}`}
+              skillGroup={skillgroup}
+            />
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+});
+
+Skills.displayName = "Skills";
+export default Skills;
