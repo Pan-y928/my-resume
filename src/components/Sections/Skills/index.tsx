@@ -6,7 +6,10 @@ import { SkillGroup } from "../Resume/Skills";
 
 const Skills: FC = memo(() => {
   return (
-    <Section className="bg-white" sectionId={SectionId.Skills}>
+    <Section
+      className="bg-gradient-to-b from-white via-emerald-50/80 to-neutral-100"
+      sectionId={SectionId.Skills}
+    >
       <div className="flex flex-col gap-y-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-neutral-900">Key skills</h2>
