@@ -284,24 +284,23 @@ export const experience: TimelineItem[] = [
   {
     date: "Mar 2025 - Jun 2025",
     location: "Sydney, Australia",
-    title: "Full-Stack Developer · Electronic Invoicing System",
+    title: "Full-Stack Developer & Scrum Master · Electronic Invoicing System",
     content: (
       <ul className="list-disc space-y-2 pl-4">
         <li>
-          Built layered ASP.NET Core REST APIs secured with JWT and Identity,
-          backed by Entity Framework and SQL Server.
+          Led a 6-member Agile team to build the invoicing system with secure login, invoice CRUD, PDF upload, validation, and Reckon API integration.
         </li>
         <li>
-          Delivered a responsive React front end using TypeScript, React Hook
-          Form, React Query, and Tailwind CSS with GitHub Actions CI/CD.
+          Built RESTful APIs with ASP.NET Core and layered architecture, secured with JWT and ASP.NET Identity.
         </li>
         <li>
-          Containerised services with Docker, deployed to AWS, generated Swagger
-          docs, and implemented xUnit/Moq/FluentAssertions tests.
+          Delivered a responsive React front end using TypeScript and Tailwind CSS with GitHub Actions CI/CD.
         </li>
         <li>
-          Integrated Reckon APIs via OAuth 2.0 and Gemini 2.0 for PDF parsing,
-          while facilitating agile ceremonies as Scrum Master.
+          Containerised services with Docker, deployed to AWS, and implemented xUnit/Moq/FluentAssertions tests.
+        </li>
+        <li>
+          Integrated OAuth 2.0 for secure access to Reckon services and incorporated Gemini 2.0 for invoice validation and PDF data extraction.
         </li>
       </ul>
     ),
@@ -313,20 +312,16 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc space-y-2 pl-4">
         <li>
-          Implemented C# ASP.NET Core APIs with JWT-based role management across
-          Admin, Client, and Provider portals.
+          Contributed to a large-scale platform serving elderly and disabled Australians in applying for NDIS support services (dining, care, home support).
         </li>
         <li>
-          Designed resilient SQL Server and MongoDB data models to meet NDIS
-          service requirements.
+          Implemented RESTful API with C# ASP.NET Core and JWT-based role management for Admin, Client, and Provider portals.
         </li>
         <li>
-          Developed a TypeScript React SPA powered by Redux Toolkit, React
-          Query, and Tailwind CSS with WCAG 2.1 AA accessibility.
+          Developed SPA using TypeScript, React (Redux Toolkit, Tailwind CSS, React Query).
         </li>
         <li>
-          Participated in agile sprints, code reviews, and performance tuning
-          initiatives to improve platform responsiveness.
+          Designed database schemas with SQL Server and MongoDB, ensuring high availability and scalability.
         </li>
       </ul>
     ),

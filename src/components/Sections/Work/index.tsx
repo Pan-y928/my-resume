@@ -7,7 +7,7 @@ import Section from "../../Layout/Section";
 const Work: FC = memo(() => {
   return (
     <Section
-      className="bg-gradient-to-b from-stone-950 via-neutral-950 to-black text-neutral-100"
+      className="bg-gradient-to-b from-stone-950 via-neutral-700 to-black text-neutral-100"
       sectionId={SectionId.Work}
     >
       <div className="flex flex-col gap-8">
@@ -15,10 +15,6 @@ const Work: FC = memo(() => {
           <h2 className="mt-3 text-3xl font-bold text-white">
             Work Experience
           </h2>
-          <p className="mt-3 text-base text-neutral-300">
-            Recent roles ordered from newest to earliest, highlighting ownership
-            across architecture, delivery, and collaboration.
-          </p>
         </div>
         <div className="relative">
           <div className="pointer-events-none absolute left-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-400 via-emerald-500/30 to-transparent sm:left-5" />
@@ -41,6 +37,7 @@ const WorkTimelineItem: FC<{ item: TimelineItemType; index: number }> = memo(
   ({ item, index }) => {
     const { title, date, location, content } = item;
     const isLatest = index === 0;
+    const [role, company] = title.split("·").map((part) => part.trim());
     return (
       <div className="relative pl-10 sm:pl-16">
         <span className="absolute left-2 top-8 -translate-x-1/2 sm:left-5">
@@ -64,7 +61,14 @@ const WorkTimelineItem: FC<{ item: TimelineItemType; index: number }> = memo(
               <span className="text-neutral-400">/</span>
               <span className="text-neutral-300">{location}</span>
             </div>
-            <h3 className="text-2xl font-semibold text-white">{title}</h3>
+            <div>
+              <h3 className="text-2xl font-semibold text-white">{role}</h3>
+              {company && (
+                <p className="text-sm font-medium uppercase tracking-wide text-emerald-200/80">
+                  {company}
+                </p>
+              )}
+            </div>
           </div>
           <div className="text-neutral-200 [&>ul]:space-y-2 [&>ul]:pl-5 [&>ul]:text-sm [&>ul>li]:list-disc">
             {content}
