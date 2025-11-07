@@ -46,6 +46,7 @@ export const SectionId = {
   Portfolio: "portfolio",
   Resume: "resume",
   Skills: "skills",
+  Work: "work",
   Stats: "stats",
   Testimonials: "testimonials",
 } as const;
