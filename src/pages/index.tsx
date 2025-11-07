@@ -4,8 +4,8 @@ import { FC, memo } from "react";
 import Page from "../components/Layout/Page";
 import Contact from "../components/Sections/Contact";
 import Hero from "../components/Sections/Hero";
+import Education from "../components/Sections/Education";
 import Portfolio from "../components/Sections/Portfolio";
-import Resume from "../components/Sections/Resume";
 import Skills from "../components/Sections/Skills";
 import Work from "../components/Sections/Work";
 import { homePageMeta } from "../data/data";
@@ -23,7 +23,7 @@ const Home: FC = memo(() => {
       <Hero />
       <Skills />
       <Work />
-      <Resume />
+      <Education />
       <Portfolio />
       <Contact />
     </Page>

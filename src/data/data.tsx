@@ -44,9 +44,9 @@ export const SectionId = {
   About: "about",
   Contact: "contact",
   Portfolio: "portfolio",
-  Resume: "resume",
   Skills: "skills",
   Work: "work",
+  Education: "education",
   Stats: "stats",
   Testimonials: "testimonials",
 } as const;
@@ -258,23 +258,25 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItem[] = [
   {
     date: "Sep 2023 - Sep 2025",
-    location: "Sydney, Australia",
+    location: "University of New South Wales (UNSW)",
     title: "Master of Information Technology",
     content: (
       <p>
-        University of New South Wales (UNSW). Weighted Average Mark (WAM):
-        83/100.
+        Relevant Coursework: Artificial Intelligence, Neural Networks and Deep Learning, Web Frontend Development, Advanced C++ Programming, Rust Programming, Database Service Engineering, etc.
+        <br />
+        WAM: 83/100
       </p>
     ),
   },
   {
     date: "Sep 2018 - Jul 2022",
-    location: "Xi’an, China",
+    location: "Xidian University",
     title: "Bachelor of Software Engineering",
     content: (
       <p>
-        Xidian University. GPA: 3.4/4.0 with strong foundations in software
-        engineering principles and backend systems.
+        Relevant Coursework: Object-Oriented Programming, Database Systems, Computer Organization and Architecture, Computer Networks, Data Structures and Algorithms, etc.
+        <br />
+        GPA: 3.4/4.0
       </p>
     ),
   },
@@ -353,7 +355,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: "Jun 2021 - Sep 2021",
-    location: "Xi’an, China",
+    location: "Xi'an, China",
     title: "Backend Developer · On-campus Internship, Xidian University",
     content: (
       <ul className="list-disc space-y-2 pl-4">

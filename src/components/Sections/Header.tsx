@@ -10,10 +10,10 @@ export const headerID = "headerNav";
 const Header: FC = memo(() => {
   const navSections = useMemo(
     () => [
-      SectionId.About,
-      SectionId.Resume,
+      SectionId.Skills,
+      SectionId.Work,
+      SectionId.Education,
       SectionId.Portfolio,
-      SectionId.Testimonials,
       SectionId.Contact,
     ],
     [],
