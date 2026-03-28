@@ -280,9 +280,36 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: "Nov 2025 - Present",
+    location: "Sydney, Australia",
+    title: "Software Developer · Selected Tutorial Centre",
+    content: (
+      <ul className="list-disc space-y-2 pl-4">
+        <li>
+          Contributed to the development and maintenance of an internal C# ASP.NET-based online examination platform for student assessments.
+        </li>
+        <li>
+          Worked with SQL Server and MongoDB to manage and optimize examination data storage, improving efficiency and maintaining data consistency.
+        </li>
+        <li>
+          Improved the React frontend to enhance exam paper readability and optimize the student testing experience.
+        </li>
+        <li>
+          Conducted functional testing using Postman and browser developer tools to verify API and frontend behavior.
+        </li>
+        <li>
+          Performed weekly system updates and debugging, quickly identifying and resolving issues during exam sessions.
+        </li>
+        <li>
+          Processed and validated student exam data to generate reports, reducing manual verification effort and improving workflow efficiency.
+        </li>
+      </ul>
+    ),
+  },
+  {
     date: "Mar 2025 - Jun 2025",
     location: "Sydney, Australia",
-    title: "Full-Stack Developer & Scrum Master · Electronic Invoicing System",
+    title: "Full-Stack Developer & Scrum Master · Electronic Invoicing System (https://invoice-flow.org/)",
     content: (
       <ul className="list-disc space-y-2 pl-4">
         <li>
