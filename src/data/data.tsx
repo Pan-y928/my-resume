@@ -292,7 +292,10 @@ export const experience: TimelineItem[] = [
           Worked with SQL Server and MongoDB to manage and optimize examination data storage, improving efficiency and maintaining data consistency.
         </li>
         <li>
-          Improved the React frontend to enhance exam paper readability and optimize the student testing experience.
+          Developed responsive exam interfaces using TypeScript, React, and Tailwind CSS.
+        </li>
+        <li>
+          ·Integrated GPT-based AI essay marking and automated feedback generation to reduce manual grading workload and improve marking efficiency.
         </li>
         <li>
           Conducted functional testing using Postman and browser developer tools to verify API and frontend behavior.
@@ -352,11 +355,14 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: "Jul 2022 - Dec 2022",
+    date: "Jul 2022 - May 2023",
     location: "Hangzhou, China",
     title: "Software Engineer · TP-Link",
     content: (
       <ul className="list-disc space-y-2 pl-4">
+        <li>
+          Contributed to backend service development using Spring Boot, MyBatis, and MySQL.
+        </li>
         <li>
           Developed embedded C firmware for robotic vacuum cleaners using Keil5
           and Linux environments.
@@ -372,27 +378,6 @@ export const experience: TimelineItem[] = [
         <li>
           Maintained Jenkins-based build and release workflows and managed
           issues through Bugzilla.
-        </li>
-      </ul>
-    ),
-  },
-  {
-    date: "Jun 2021 - Sep 2021",
-    location: "Xi'an, China",
-    title: "Backend Developer · On-campus Internship, Xidian University",
-    content: (
-      <ul className="list-disc space-y-2 pl-4">
-        <li>
-          Delivered Spring Boot microservices with MyBatis and MySQL for party
-          membership fee tracking and communications.
-        </li>
-        <li>
-          Implemented authentication and role-based access control for multiple
-          member tiers.
-        </li>
-        <li>
-          Authored unit tests and co-ordinated API contracts with frontend
-          engineers to streamline integration.
         </li>
       </ul>
     ),
